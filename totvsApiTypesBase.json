@@ -39,7 +39,7 @@
             "items": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/QuestionnarieType"
+                "$ref": "#/definitions/questionnarieType"
               }
             }
           }
