@@ -46,7 +46,7 @@
         }
       ]
     },
-    "QuestionnarieType": {
+    "questionnarieType": {
       "type": "object",
       "properties": {
         "companyId": {
