@@ -158,13 +158,13 @@
         "auditSequence": {
           "type": "string",
           "maximum": 2,
-          "description": "Sequência Ãƒ\ufffdrea Auditada",
+          "description": "Sequência Auditorias Auditada",
           "x-totvs": [
             {
               "product": "PROTHEUS",
               "field": "QUD.QUD_SEQ",
               "type": "varchar",
-              "note": "SequÃƒÂªncia",
+              "note": "Sequência",
               "length": 2
             }
           ]
@@ -172,13 +172,13 @@
         "checkList": {
           "type": "string",
           "maximum": 6,
-          "description": "NÃƒÂºmero de Check List",
+          "description": "Número de Check List",
           "x-totvs": [
             {
               "product": "PROTHEUS",
               "field": "QUD.QUD_CHKLST",
               "type": "varchar",
-              "note": "NÃƒÂºmero de Check List",
+              "note": "Número de Check List",
               "length": 6
             }
           ]
@@ -200,13 +200,13 @@
         "questionNumber": {
           "maximum": 3,
           "type": "string",
-          "description": "NÃƒÂºmero da QuestÃƒÂ£o",
+          "description": "Número da Questão",
           "x-totvs": [
             {
               "product": "PROTHEUS",
               "field": "QUD.QUD_QSTITE",
               "type": "varchar",
-              "note": "NÃƒÂºmero da QuestÃƒÂ£o",
+              "note": "Número da Questão",
               "length": 3
             }
           ]
@@ -214,13 +214,13 @@
         "resultLevel": {
           "type": "string",
           "maximum": 1,
-          "description": "NÃƒ\u00advel do Resultado",
+          "description": "Número do Resultado",
           "x-totvs": [
             {
               "product": "PROTHEUS",
               "field": "QUJ.QUJ_NIVEL",
               "type": "varchar",
-              "note": "NÃƒ\u00advel do Resultado",
+              "note": "Número do Resultado",
               "length": 1
             }
           ]
@@ -242,7 +242,7 @@
         },
         "itensTableQuestionnarie": {
           "type": "object",
-          "$ref": "#/components/schemas/itensTableQuestionnarieInfo"
+          "$ref": "#/definitions/itensTableQuestionnarieInfo"
         }
       }
     },
@@ -272,11 +272,11 @@
           },
           "internalId": {
             "type": "string",
-            "description": "InternalId do QuestionÃƒÂ¡rio de Auditoria",
+            "description": "InternalId do Questionário de Auditoria",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
-                "note": "O internalId do QuestionÃƒÂ¡rio ÃƒÂ© formado pelas tabelas QUD_FILIAL|QUD_NUMAUD|QUD_SEQ|QUD_CHKLST|QUD_REVIS|QUD_CHKITE|QUD_QSTITE, QUH_FILIAL|QUH_NUMAUD|QUH_SEQ e QUE_FILIAL|QUE_NUMAUD|QUE_CHKLST|QUE_REVIS|QUE_CHKITE|QUE_QSTITE",
+                "note": "O internalId do Questionário são formado pelas tabelas QUD_FILIAL|QUD_NUMAUD|QUD_SEQ|QUD_CHKLST|QUD_REVIS|QUD_CHKITE|QUD_QSTITE, QUH_FILIAL|QUH_NUMAUD|QUH_SEQ e QUE_FILIAL|QUE_NUMAUD|QUE_CHKLST|QUE_REVIS|QUE_CHKITE|QUE_QSTITE",
                 "type": "varchar"
               }
             ]
@@ -284,13 +284,13 @@
           "questionNumber": {
             "type": "string",
             "maximum": 3,
-            "description": "NÃƒÂºmero da QuestÃƒÂ£o",
+            "description": "Número do Questionário",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QUD.QUD_QSTITE",
                 "type": "varchar",
-                "note": "NÃƒÂºmero da QuestÃƒÂ£o",
+                "note": "Número da Questionário",
                 "length": 3
               }
             ]
@@ -298,13 +298,13 @@
           "checkListNumber": {
             "type": "string",
             "maximum": 6,
-            "description": "NÃƒÂºmero do Check List",
+            "description": "Número do Check List",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QUD.QUD_CHKLS",
                 "type": "varchar",
-                "note": "NÃƒÂºmero do Check List",
+                "note": "Número do Check List",
                 "length": 6
               }
             ]
@@ -326,13 +326,13 @@
           "auditorCode": {
             "type": "string",
             "maximum": 16,
-            "description": "CÃƒÂ³digo do Auditor",
+            "description": "Código do Auditor",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QUH.QUH_CODAUD",
                 "type": "varchar",
-                "note": "CÃƒÂ³digo do Auditor",
+                "note": "Código do Auditor",
                 "length": 16
               }
             ]
@@ -340,13 +340,13 @@
           "userName": {
             "type": "string",
             "maximum": 30,
-            "description": "Nome do UsuÃƒÂ¡rio",
+            "description": "Nome do Usuário",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QAA.QAA_NOME",
                 "type": "varchar",
-                "note": "Nome do UsuÃƒÂ¡rio",
+                "note": "Nome do Usuário",
                 "length": 30
               }
             ]
@@ -354,13 +354,13 @@
           "questionRequirements": {
             "type": "string",
             "maximum": 80,
-            "description": "Requisitos da QuestÃƒÂ£o",
+            "description": "Requisitos da Questão",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QUE.QUE_REQQS1",
                 "type": "varchar",
-                "note": "Requisitos da QuestÃƒÂ£o",
+                "note": "Requisitos da Questão",
                 "length": 80
               }
             ]
@@ -368,13 +368,13 @@
           "questionNote": {
             "type": "string",
             "maximum": 80,
-            "description": "ObservaÃƒÂ§ÃƒÂµes da QuestÃƒÂ£o",
+            "description": "Observações da Questão",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QUE.QUE_OBSER1",
                 "type": "varchar",
-                "note": "ObservaÃƒÂ§ÃƒÂµes da QuestÃƒÂ£o",
+                "note": "Observações da Questão",
                 "length": 80
               }
             ]
@@ -425,7 +425,7 @@
           },
           "itensTableNonconformity": {
             "type": "object",
-            "$ref": "#/components/schemas/nonconformityInfo"
+            "$ref": "#/definitions/nonconformityInfo"
           }
         }
       }
@@ -467,13 +467,13 @@
           "correctiveAction": {
             "type": "string",
             "maximum": 1,
-            "description": "AÃƒÂ§ÃƒÂ£o Corretiva",
+            "description": "Ação Corretiva",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QUG.QUG_ACACOR",
                 "type": "varchar",
-                "note": "AÃƒÂ§ÃƒÂ£o Corretiva",
+                "note": "Ação Corretiva",
                 "length": 1
               }
             ]
@@ -481,13 +481,13 @@
           "correctionDealine": {
             "type": "integer",
             "maximum": 3,
-            "description": "Dias para CorreÃƒÂ§ÃƒÂ£o",
+            "description": "Dias para correção",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QUG.QUG_PRAZO",
                 "type": "number",
-                "note": "Dias para CorreÃƒÂ§ÃƒÂ£o",
+                "note": "Dias para correção",
                 "length": 3
               }
             ]
@@ -509,13 +509,13 @@
           "ncDescription": {
             "type": "string",
             "maximum": 80,
-            "description": "DescriÃƒÂ§ÃƒÂ£o da NC",
+            "description": "Descrição da NC",
             "x-totvs": [
               {
                 "product": "PROTHEUS",
                 "field": "QUG.QUG_DESC1",
                 "type": "varchar",
-                "note": "DescriÃƒÂ§ÃƒÂ£o da NC",
+                "note": "Descrição da NC",
                 "length": 80
               }
             ]
