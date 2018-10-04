@@ -1,5 +1,5 @@
 {
-  "$schema": "",
+  "$schema": "https://raw.githubusercontent.com/thiagorover/github-course/master/totvsApiTypesBase.json#",
   
   "definitions": {
      "Paging": {
